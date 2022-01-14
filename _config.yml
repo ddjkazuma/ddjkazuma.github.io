@@ -3,7 +3,7 @@ description: A simple, clean, and minimal Jekyll Theme.
 
 # Set this to your domain; baseurl is for the folder in your domain, if you have one -- `blog`.
 # you can leave both of them blank if you are deploying on a top-level domain.
-url: https://ddjkazuma.github.io/
+url: https://ddjkazuma.github.io
 baseurl: ''
 
 # footer
