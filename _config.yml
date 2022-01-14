@@ -3,8 +3,8 @@ description: A simple, clean, and minimal Jekyll Theme.
 
 # Set this to your domain; baseurl is for the folder in your domain, if you have one -- `blog`.
 # you can leave both of them blank if you are deploying on a top-level domain.
-url: https://oinam.github.io
-baseurl: /oinam-jekyll
+url: https://ddjkazuma.github.io/
+baseurl: ''
 
 # footer
 footer:
@@ -15,7 +15,7 @@ footer:
 footer_custom: 'An ever Work-in-Progress effort by <a href="https://oinam.com">Oinam</a>.'
 
 layout:
-  theme: default # default, vintage, nord
+  theme: nord # default, vintage, nord
   theme_highlighter: vs # default, more at css/highlighter (source: https://github.com/richleland/pygments-css)
   theme_switch: true # enable or disable user toggle switch between light and dark theme
   home_posts_no: 6
@@ -34,7 +34,7 @@ styles:
 markdown: kramdown
 highlighter: rouge
 
-permalink: pretty
+#permalink: pretty
 permalink: /:title/
 
 sass:
