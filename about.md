@@ -1,17 +1,9 @@
 ---
 layout: page
-title: About
+title: 关于我的
 permalink: /about/
 ---
 
-This is an example page that uses the `page` layout.
-
-Visit the [Homepage]({{ site.baseurl | prepend: site.url }}/) for documentation on installation, setup, how-tos, features, and more about this Jekyll theme.
+PHP程序员，5年web后端开发经验，爱好阅读与学习
 
 ---
-
-Email us at [hi@oinam.com](mailto:hi@oinam.com?subject=Oinam Jekyll).\
-Find us at
-[oinam.com](https://oinam.com),
-[Twitter](https://twitter.com/oinam),
-[Instagram](https://www.instagram.com/oinam/).

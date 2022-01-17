@@ -1,14 +1,15 @@
-title: Oinam Jekyll
-description: A simple, clean, and minimal Jekyll Theme.
+title: ddjkazuma的博客
+description: web开发知识整理及拾遗
 
 # Set this to your domain; baseurl is for the folder in your domain, if you have one -- `blog`.
 # you can leave both of them blank if you are deploying on a top-level domain.
 url: https://ddjkazuma.github.io
+#url: http://localhost:4000
 baseurl: ''
 
 # footer
 footer:
-  credit: true
+  credit: false
   custom: false
 
 # if above footer:custom is 'true', then this will be printed instead

@@ -1,8 +1,8 @@
-- title: About
+- title: 关于我的
   url: /about/
 
-- title: Blog
+- title: 文章
   url: /blog/
 
-- title: Styleguide
-  url: /styleguide/
+#- title: Styleguide
+#  url: /styleguide/
