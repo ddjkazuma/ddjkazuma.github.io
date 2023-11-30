@@ -75,8 +75,7 @@ class ValidateRequestParamPass implements CompilerPassInterface
     }
 }
 ```
-
-```$methodValidationsMap```保存了所有方法到对应的字段及验证规则的映射，那么我们可以开始创建```ValidateRequestSubscriber```了。```ValidateRequestSubscriber```如下。
+注意```$methodValidationsMap```保存了所有方法到对应的字段及验证规则的映射，那么我们可以开始创建```ValidateRequestSubscriber```了。```ValidateRequestSubscriber```如下。
 
 ```php
 class ValidateRequestSubscriber implements EventSubscriberInterface
