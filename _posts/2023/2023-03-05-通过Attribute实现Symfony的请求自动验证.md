@@ -37,7 +37,7 @@ class ValidateRequestParam
 接下来就是监听```kernel.request```事件，定义一个EventSubscriber，我们可以在$event中通过反射获取当前方法，并获得挂载的Attribute实例，然后调用框架绑定的validator服务，手动的验证request中对应的数据。
 但是这样搞有个问题，就是创建反射是十分消耗性能的，幸运的是symfony有编译缓存的，那么我们可以在编译期扫描所有的方法，然后创建一个```$methodValidationsMap```，它是一个controller::method => $rules的缓存，接下来在事件监听中从这个map中获取对应的规则，这样在```kener.request```中就不用再创建反射了，可以提升性能。
 
-那么我们需要创建一个CompilerPass，这个CompilerPass会创建并缓存我们需要的$rulesMap
+那么我们需要创建一个CompilerPass，这个CompilerPass会创建并缓存我们需要的```$methodValidationsMap```
 ```php
 class ValidateRequestParamPass implements CompilerPassInterface
 {
@@ -75,7 +75,9 @@ class ValidateRequestParamPass implements CompilerPassInterface
     }
 }
 ```
-```$methodValidationsMap```保存了所有方法到对应的字段及验证规则的映射，那么我们可以开始创建```ValidateRequestSubscriber```了。```ValidateRequestSubscriber```如下。  
+
+```$methodValidationsMap```保存了所有方法到对应的字段及验证规则的映射，那么我们可以开始创建```ValidateRequestSubscriber```了。```ValidateRequestSubscriber```如下。
+
 ```php
 class ValidateRequestSubscriber implements EventSubscriberInterface
 {
